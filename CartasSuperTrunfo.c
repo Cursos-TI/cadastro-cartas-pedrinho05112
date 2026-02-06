@@ -124,7 +124,7 @@ int main() {
         printf("Número de pontos Turísticos: %d\n", turisticos);
         printf("Densidade Populacional: %.2fhab/km\n", dens);
         printf("PIB per carpita: %.2f reais\n", carpita);
-        printf("Super poder: %f\n", super_poder);
+        printf("Super poder: %2.f\n", super_poder);
       break;
       case 2:
         printf("\n");
@@ -138,7 +138,7 @@ int main() {
         printf("Número de pontos Turísticos: %d\n", turisticos_2);
         printf("Densidade Populacional: %.2f hab/km\n", dens_2);
         printf("PIB per carpita: %.2f reais\n", carpita_2);
-        printf("Super poder: %f\n", super_poder_2 );
+        printf("Super poder: %2.f\n", super_poder_2 );
       break;
     
       default:
@@ -162,17 +162,17 @@ int main() {
       {
       case 1:
       printf("\n");
-      printf("Atributo ==> População\n")
+      printf("Atributo ==> População\n");
       printf("Atributo ==> Área\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
       printf("Carta 1:%lu || carta 2: %lu\n", populacao, populacao_2 );
-      printf("Carta 1:%f || carta 2: %f\n", Area, Area_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", Area, Area_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = populacao_2 + Area_2;
-      resultado float = populacao  + Area;
+      resultado2  = populacao_2 + Area_2;
+      resultado  = populacao  + Area;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -184,19 +184,19 @@ int main() {
         printf("Carta 2: %s VENCEU!!\n", cidade_2);
        }
       break;
-      case 2;
+      case 2:
        printf("\n");
-      printf("Atributo ==> População\n")
+      printf("Atributo ==> População\n");
       printf("Atributo ==> PIB\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
       printf("Carta 1:%lu || carta 2: %lu\n", populacao, populacao_2 );
-      printf("Carta 1:%f || carta 2: %f\n", PIB, PIB_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", PIB, PIB_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = populacao_2 + PIB_2;
-      resultado float = populacao + PIB;
+      resultado2  = populacao_2 + PIB_2;
+      resultado = populacao + PIB;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -210,17 +210,17 @@ int main() {
       break;
       case 3:
         printf("\n");
-      printf("Atributo ==> População\n")
+      printf("Atributo ==> População\n");
       printf("Atributo ==> Numero de pontos turísticos\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
       printf("Carta 1:%lu || carta 2: %lu\n", populacao, populacao_2 );
-      printf("Carta 1:%f || carta 2: %f\n", turisticos, turisticos_2 );
+      printf("Carta 1:%d || carta 2: %d\n", turisticos, turisticos_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = populacao_2 + turisticos_2;
-      resultado float = populacao + turisticos;
+      resultado2  = populacao_2 + turisticos_2;
+      resultado  = populacao + turisticos;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -234,17 +234,17 @@ int main() {
       break;
       case 4:
         printf("\n");
-      printf("Atributo ==> População\n")
+      printf("Atributo ==> População\n");
       printf("Atributo ==> Densidade demográfica\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
       printf("Carta 1:%lu || carta 2: %lu\n", populacao, populacao_2 );
-      printf("Carta 1:%f || carta 2: %f\n", dens, dens_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", dens, dens_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = populacao_2 + dens_2;
-      resultado float = populacao + dens;
+      resultado2  = populacao_2 + dens_2;
+      resultado  = populacao + dens;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -258,7 +258,7 @@ int main() {
       break;
       
       default:
-      printf("Opção invalida!!\n")
+      printf("Opção invalida!!\n");
         break;
       }
       //final da case 2 do menu 1
@@ -279,17 +279,17 @@ int main() {
       {
       case 1:
       printf("\n");
-      printf("Atributo ==> Área\n")
+      printf("Atributo ==> Área\n");
       printf("Atributo ==> população\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
       printf("Carta 1:%2.f || carta 2: %2.f\n",Area, Area_2 );
-      printf("Carta 1:%f || carta 2: %f\n", populacao, populacao_2 );
+      printf("Carta 1:%lu || carta 2: %lu\n", populacao, populacao_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = Area_2 + populacao_2;
-      resultado float = Area  + populacao;
+      resultado2  = Area_2 + populacao_2;
+      resultado  = Area  + populacao;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -301,19 +301,19 @@ int main() {
         printf("Carta 2: %s VENCEU!!\n", cidade_2);
        }
       break;
-      case 2;
+      case 2:
        printf("\n");
-      printf("Atributo ==> Área\n")
+      printf("Atributo ==> Área\n");
       printf("Atributo ==> PIB\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", Area, Area_2);
-      printf("Carta 1:%f || carta 2: %f\n", PIB, PIB_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", Area, Area_2);
+      printf("Carta 1:%2.f || carta 2: %2.f\n", PIB, PIB_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = Area_2 + PIB_2;
-      resultado float = Area + PIB;
+      resultado2  = Area_2 + PIB_2;
+      resultado  = Area + PIB;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -327,17 +327,17 @@ int main() {
       break;
       case 3:
         printf("\n");
-      printf("Atributo ==> Área\n")
+      printf("Atributo ==> Área\n");
       printf("Atributo ==> Numero de pontos turísticos\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", Area, Area_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", Area, Area_2 );
       printf("Carta 1:%d || carta 2: %d\n", turisticos, turisticos_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = Area_2 + turisticos_2;
-      resultado float = Area + turisticos;
+      resultado2  = Area_2 + turisticos_2;
+      resultado  = Area + turisticos;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -351,17 +351,17 @@ int main() {
       break;
       case 4:
         printf("\n");
-      printf("Atributo ==> Área\n")
+      printf("Atributo ==> Área\n");
       printf("Atributo ==> Densidade demográfica\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", Area, Area_2 );
-      printf("Carta 1:%f || carta 2: %f\n", dens, dens_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", Area, Area_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", dens, dens_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = Area_2 + dens_2;
-      resultado float = Area + dens;
+      resultado2  = Area_2 + dens_2;
+      resultado  = Area + dens;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -375,7 +375,7 @@ int main() {
       break;
       
       default:
-      printf("Opção invalida!!\n")
+      printf("Opção invalida!!\n");
         break;
       }
     break;
@@ -396,17 +396,17 @@ int main() {
       {
       case 1:
       printf("\n");
-      printf("Atributo ==> PIB\n")
+      printf("Atributo ==> PIB\n");
       printf("Atributo ==> População\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", PIB, PIB_2 );
-      printf("Carta 1:%f || carta 2: %f\n", populacao, populacao_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", PIB, PIB_2 );
+      printf("Carta 1:%lu || carta 2: %lu\n", populacao, populacao_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = PIB_2 + populacao_2;
-      resultado float = PIB  + populacao;
+      resultado2  = PIB_2 + populacao_2;
+      resultado  = PIB  + populacao;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -418,19 +418,19 @@ int main() {
         printf("Carta 2: %s VENCEU!!\n", cidade_2);
        }
       break;
-      case 2;
+      case 2:
        printf("\n");
-      printf("Atributo ==> PIB\n")
+      printf("Atributo ==> PIB\n");
       printf("Atributo ==> Área\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", PIB, PIB_2);
-      printf("Carta 1:%f || carta 2: %f\n", Area, Area_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", PIB, PIB_2);
+      printf("Carta 1:%2.f || carta 2: %2.f\n", Area, Area_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = Area_2 + PIB_2;
-      resultado float = Area+ PIB;
+      resultado2  = Area_2 + PIB_2;
+      resultado  = Area+ PIB;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -444,17 +444,17 @@ int main() {
       break;
       case 3:
         printf("\n");
-      printf("Atributo ==> PIB\n")
+      printf("Atributo ==> PIB\n");
       printf("Atributo ==> Numero de pontos turísticos\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", PIB, PIB_2);
-      printf("Carta 1:%f || carta 2: %f\n", turisticos, turisticos_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", PIB, PIB_2);
+      printf("Carta 1:%d || carta 2: %d\n", turisticos, turisticos_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = PIB_2 + turisticos_2;
-      resultado float = PIB + turisticos;
+      resultado2  = PIB_2 + turisticos_2;
+      resultado  = PIB + turisticos;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -468,17 +468,17 @@ int main() {
       break;
       case 4:
         printf("\n");
-      printf("Atributo ==> PIB\n")
+      printf("Atributo ==> PIB\n");
       printf("Atributo ==> Densidade demográfica\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", PIB, PIB_2 );
-      printf("Carta 1:%f || carta 2: %f\n", dens, dens_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", PIB, PIB_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", dens, dens_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = PIB_2 + dens_2;
-      resultado float = PIB + dens;
+      resultado2  = PIB_2 + dens_2;
+      resultado  = PIB + dens;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -492,7 +492,7 @@ int main() {
       break;
       
       default:
-      printf("Opção invalida!!\n")
+      printf("Opção invalida!!\n");
         break;
       }
     break;
@@ -513,17 +513,17 @@ int main() {
       {
       case 1:
       printf("\n");
-      printf("Atributo ==> Numero de pontos turísticos\n")
+      printf("Atributo ==> Numero de pontos turísticos\n");
       printf("Atributo ==> População\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", turisticos, turisticos_2 );
-      printf("Carta 1:%f || carta 2: %f\n", populacao, populacao_2 );
+      printf("Carta 1:%d || carta 2: %d\n", turisticos, turisticos_2 );
+      printf("Carta 1:%lu || carta 2: %lu\n", populacao, populacao_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = populacao_2 + turisticos_2;
-      resultado float = populacao  + turisticos;
+      resultado2  = populacao_2 + turisticos_2;
+      resultado  = populacao  + turisticos;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -535,19 +535,19 @@ int main() {
         printf("Carta 2: %s VENCEU!!\n", cidade_2);
        }
       break;
-      case 2;
+      case 2:
        printf("\n");
-      printf("Atributo ==> Numero de pontos turísticos\n")
+      printf("Atributo ==> Numero de pontos turísticos\n");
       printf("Atributo ==> Área\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", turisticos, turisticos_2 );
-      printf("Carta 1:%f || carta 2: %f\n", Area, Area_2 );
+      printf("Carta 1:%d || carta 2: %d\n", turisticos, turisticos_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", Area, Area_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = turisticos_2 + Area_2;
-      resultado float = turisticos + Area;
+      resultado2  = turisticos_2 + Area_2;
+      resultado  = turisticos + Area;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -561,17 +561,17 @@ int main() {
       break;
       case 3:
         printf("\n");
-      printf("Atributo ==> Numero de pontos turísticos\n")
+      printf("Atributo ==> Numero de pontos turísticos\n");
       printf("Atributo ==> PIB\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", turisticos, turisticos_2 );
-      printf("Carta 1:%f || carta 2: %f\n", PIB, PIB_2 );
+      printf("Carta 1:%d || carta 2: %d\n", turisticos, turisticos_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", PIB, PIB_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = PIB_2+ turisticos_2;
-      resultado float = PIB + turisticos;
+      resultado2 = PIB_2+ turisticos_2;
+      resultado = PIB + turisticos;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -585,17 +585,17 @@ int main() {
       break;
       case 4:
         printf("\n");
-      printf("Atributo ==> Numero de pontos turísticos\n")
+      printf("Atributo ==> Numero de pontos turísticos\n");
       printf("Atributo ==> Densidade demográfica\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", turisticos, turisticos_2 );
-      printf("Carta 1:%f || carta 2: %f\n", dens, dens_2 );
+      printf("Carta 1:%d || carta 2: %d\n", turisticos, turisticos_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", dens, dens_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = turisticos_2 + dens_2;
-      resultado float = turisticos + dens;
+      resultado2  = turisticos_2 + dens_2;
+      resultado  = turisticos + dens;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -609,7 +609,7 @@ int main() {
       break;
       
       default:
-      printf("Opção invalida!!\n")
+      printf("Opção invalida!!\n");
         break;
       }
     break;
@@ -630,17 +630,17 @@ int main() {
       {
       case 1:
       printf("\n");
-      printf("Atributo ==> Densidade demográfica\n")
+      printf("Atributo ==> Densidade demográfica\n");
       printf("Atributo ==> População\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", dens, dens_2);
-      printf("Carta 1:%f || carta 2: %f\n", populacao, populacao_2 );
+      printf("Carta 1:%2.f|| carta 2: %2.f\n", dens, dens_2);
+      printf("Carta 1:%lu || carta 2: %lu\n", populacao, populacao_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = populacao_2 + dens_2;
-      resultado float = populacao  + dens;
+      resultado2  = populacao_2 + dens_2;
+      resultado  = populacao  + dens;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -652,19 +652,19 @@ int main() {
         printf("Carta 2: %s VENCEU!!\n", cidade_2);
        }
       break;
-      case 2;
+      case 2:
        printf("\n");
-      printf("Atributo ==> Densidade demográfica\n")
+      printf("Atributo ==> Densidade demográfica\n");
       printf("Atributo ==> Área\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", dens, dens_2 );
-      printf("Carta 1:%f || carta 2: %f\n", Area, Area_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", dens, dens_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", Area, Area_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = dens_2 + Area_2;
-      resultado float = dens + Area;
+      resultado2  = dens_2 + Area_2;
+      resultado  = dens + Area;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
@@ -678,17 +678,17 @@ int main() {
       break;
       case 3:
         printf("\n");
-      printf("Atributo ==> Densidade demográfica\n")
+      printf("Atributo ==> Densidade demográfica\n");
       printf("Atributo ==> PIB\n");
       printf("Carta 1:%s VS Carta 2:%s\n", cidade, cidade_2);
-      printf("Carta 1:%lu || carta 2: %lu\n", dens, dens_2 );
-      printf("Carta 1:%f || carta 2: %f\n", PIB, PIB_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", dens, dens_2 );
+      printf("Carta 1:%2.f || carta 2: %2.f\n", PIB, PIB_2 );
 
       //soma dos dois resultados para comparar
-      resultado2 float = PIB_2+ dens_2;
-      resultado float = dens + dens;
+      resultado2  = PIB_2+ dens_2;
+      resultado  = dens + PIB;
 
-      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2);
+      vencedor = (resultado > resultado2 ? 1 : 0) || (resultado == resultado2 ? 2 : 0);
 
       if (vencedor == 1)
       {
